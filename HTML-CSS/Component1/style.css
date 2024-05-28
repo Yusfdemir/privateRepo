@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #303236;
+  font-family: "Mulish", sans-serif;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  background: #303236;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+}
+input:focus {
+  outline: 0;
+}
+input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.component--container {
+  background: #3D3F43;
+  border-radius: 5px;
+  padding: 40px 45px;
+}
+.component--container input {
+  padding-left: 53px;
+  background-image: url(icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.component--container form {
+  margin-bottom: 30px;
+}
+.component--container h6 {
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+.component--container ul {
+  margin-top: 13px;
+}
+.component--container ul li {
+  list-style: none;
+}
+.component--container ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 7px 0;
+}
+.component--container ul li a:hover {
+  color: #2CCDEA;
+  font-weight: bold;
+}
+.component--container ul li.active a {
+  color: #2CCDEA;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
