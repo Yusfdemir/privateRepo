@@ -1,0 +1,26 @@
+.kutu2 {
+    box-sizing: border-box;
+    width: calc(50% - 28px);
+    background-color: rgb(39, 182, 182);
+    float: left;
+    margin: 14px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.kutu3 {
+    box-sizing: border-box;
+    width: calc(33.3% - 28px);
+    background-color: rgb(226, 101, 138);
+    float: left;
+    margin: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.kutu4 {
+    box-sizing: border-box;
+    width: calc(25% - 28px);
+    background-color: rgb(128, 224, 99);
+    float: left;
+    margin: 14px;
+    font-family: 'Roboto', sans-serif;
+}

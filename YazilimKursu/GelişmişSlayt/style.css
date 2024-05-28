@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 1000px;
+    height: 350px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+#picture{
+    width: 1000px;
+    height: 350px;
+    position: relative;
+    
+}
+
+#left-arrow{
+    width: 100px;
+    height: 350px;
+    position: absolute;
+    text-align: left;
+    left:0;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .5s ease-in-out 0s;
+    cursor: pointer;
+}
+#right-arrow{
+    width: 100px;
+    height: 350px;
+    position: absolute;
+    text-align: right;
+    right:0;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .5s ease-in-out 0s;
+    cursor: pointer;
+}
+#right-arrow:hover{
+    opacity: 0.9;
+}
+#left-arrow:hover{
+    opacity: 0.9;
+}
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="item hidden">
+            <span>Toplam Tıklama</span>
+            <span class="totalclick">0</span>
+        </div>
+        <div class="item">
+            <button class="btn">Başla (FPS:1250)ms</button>
+            <span class="none">Kalan Süre</span>
+            <span class="none time">0</span>
+            <input type="range" min="500" max="2000" class="btn input">
+        </div>
+        <div class="item hidden">
+            <span>Başarılı Tıklama</span>
+            <span class="successclick">0</span>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="box none">
+
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

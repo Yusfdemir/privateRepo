@@ -1,0 +1,61 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.8rem;
+}
+
+.layout {
+    width: 90%;
+    margin-left: 5%;
+ 
+    padding:2rem;
+}
+input {
+    outline: none;
+    border: none;
+    border: 1.5px solid #212121;
+    padding: 0.5rem;
+}
+button {
+    outline: none;
+    border: none;
+    border: 1.5px solid #212121;
+    background-color: transparent;
+}
+
+.todo-inp {
+    width: calc(100% - 15.5rem);
+    height: 4rem;
+}
+
+.add-btn {
+    width: 15rem;
+    height: 4rem;
+   cursor: pointer;
+}
+
+.item {
+    border: 1.5px solid #212121;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.item .remove {
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.item .remove:hover {
+    color: red;
+}

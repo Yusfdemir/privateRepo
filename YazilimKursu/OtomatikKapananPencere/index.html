@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee behavior="" direction="">Bu sayfa 10 saniye sonra otomatik olarak kapanacaktır</marquee>
+    
+    <script>
+        document.body.onload=()=>{
+            window.setTimeout("self.close()",10000);
+        }
+
+        document.querySelector("marquee").onmouseover=()=>{
+            document.querySelector("marquee").stop();
+        }
+        document.querySelector("marquee").onmouseout=()=>{
+            document.querySelector("marquee").start();
+        }
+    </script>
+</body>
+</html>

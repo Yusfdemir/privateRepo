@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .container {
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .in input{
+            margin: 15px 0px;
+            width: 100%;
+        }
+        .out div {
+            margin: 15px 0px;
+        }
+        .divide {
+            color: red;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="in">
+        <input type="text" name="" id="EvenOdd" placeholder="Tek Sayı Oluşturmak için 'Tek',   Çift sayı oluşturmak için 'Çift' yazınız " value="">
+        <input type="number" name="" id="Min" placeholder="Lütfen Alt Limiti Giriniz">
+        <input type="number" name="" id="Max" placeholder="Lütfen Üst Limiti Giriniz">
+        
+    </div>
+    <button class="btn">Sayı Üret</button>
+    <div class="out">
+        <div class="out-1"><span>Üretilen sayı:</span><span class="resultNum"></span></div>
+        <div class="out-2"><span>Bu sayı Asalmı:</span> <span class="resultPrime"></span>
+            <span class="divide"></span></div>
+        <div class="out-3"><span>Bu sayı Tekmi Çiftmi:</span> <span class="resultOddEven"></span></div>
+    </div>
+
+    <script>
+            var resultnum=document.querySelector(".resultNum");
+            var resultPrime=document.querySelector(".resultPrime");
+            var resultOddEven=document.querySelector(".resultOddEven");
+
+            document.querySelector(".btn").addEventListener("click", function(){
+            var evenOdd=document.querySelector('#EvenOdd').value;
+            var min=document.querySelector('#Min').value;
+            var max=document.querySelector('#Max').value;
+            min=Number(min);
+            max=Number(max);
+            
+            if(evenOdd==='Tek'){            // Tek sayı istediysek Tek Sayı oluşturacak Fonksiyon Çalışacak
+                CreateOddRandom(min,max);
+            }
+            else if(evenOdd==='Çift'){      // Çift sayı istediysek Çift Sayı oluşturacak Fonksiyon Çalışacak
+                CreateEvenRandom(min,max);
+            }
+
+            })
+            
+        function CreateEvenRandom(min,max){
+                let n=Math.round(min+Math.random() * (max-min));
+                    if(n%2 == 0){
+                        resultnum.textContent=n;
+                        resultPrime.textContent=IsPrime(n);
+                        resultOddEven.textContent="Çift"
+                    } 
+                    else{
+                     CreateEvenRandom(min,max);   
+                    }
+            }
+
+            function CreateOddRandom(min,max){
+                let v  = Math.round(min+Math.random() * (max-min));
+	             if(v%2 != 0){
+                   resultnum.textContent=v;
+                   resultPrime.textContent=IsPrime(v);
+                   resultOddEven.textContent="Tek"
+
+                 }
+                 else{
+                  CreateOddRandom(min,max);   
+                 } 
+        
+            }
+            // Sayının Asal olup olmadığını kontrol eden Fonksiyon
+            function IsPrime(num) {
+             var arr=[];
+                for(let i=2;i<num;i++){
+                    if(num%i==0){
+                            arr.push(i);
+                    }
+                }
+                if(arr.length==0){
+                    document.querySelector(".divide").textContent=" "
+                 return true;
+                }
+                else{
+                    document.querySelector(".divide").textContent=`Oluşturulan sayı ${arr} sayılarına tam Bölünüyor`
+                 return false;
+                }
+            }
+
+            
+           
+            
+            
+
+    </script>
+
+</div>
+</body>
+</html>

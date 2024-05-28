@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body,html{
+    height: 100%;
+}
+
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 2px solid #212121;
+    height: 70px;
+    background-color: #fff;
+    z-index: 99;
+    position: relative;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+main{
+    width: 100%;
+    height: calc(100% - 70px);
+    position: relative;
+    
+}
+
+.item{
+cursor: pointer;
+}
+.kare{
+    width: 70px;
+    height: 70px;
+}
+.dikdörtgen{
+    width: 170px;
+    height: 70px;
+}
+
+.ball{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}

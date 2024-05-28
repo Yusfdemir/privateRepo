@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="javascript:ornek('https://www.google.com.tr',1000,550);">Google'a Git</a>
+    <!-- href "" kullandığı için fonskiyon parametrelerini '' ile yolladık-->
+
+    <script>
+        function ornek(address,width,height){
+            var left=parseInt((screen.availWidth/2)-(width/2));
+            var top=parseInt((screen.availHeight/2)-(height/2));
+            var attributes="width="+width+",height="+height+",left="+left+",top="+top;
+            console.log(attributes);
+            window.open(address,"Google",attributes)
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 20px;
+}
+:root {
+    --bgcolor:white;
+    --textcolor:rgb(58, 70, 241);
+}
+body {
+    background-color: #eee;
+}
+.sol {
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+}
+.sol h1 {
+    color: var(--textcolor);
+    
+}
+.sol p {
+margin-left: 20%;
+font-size: 1rem;
+}
+.sag {
+    width: 50%;
+    float: left;
+    
+}
+.sag .form {
+    background-color: var(--bgcolor);
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin-top: 25vh;
+    border-radius: 15px; 
+}
+
+.form form input{
+    display: flex;
+    padding: 10px 10px;
+    margin-top: 20px; 
+    border-radius: 15px;
+    width: 100%;
+    
+    
+    
+}
+.form form input[type=submit] {
+    background-color: var(--textcolor);
+
+}
+.form form a:last-child {
+    background-color: rgb(8, 212, 8);
+    color:var(--bgcolor);
+    padding: 10px 10px;
+    margin-top: 20px; 
+    border-radius: 15px;
+    width: 100%;
+}
+.form form a {
+    display: flex;
+    text-decoration: none;
+    color: var(--textcolor);
+    padding-top: 10px;
+    
+}
+.form form a:hover{
+    text-decoration: underline;
+}

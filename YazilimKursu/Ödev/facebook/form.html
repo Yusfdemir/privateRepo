@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" onsubmit="return CheckInfo()">
+        <input type="text" id="name" value="" placeholder="Adınızı Girin">
+        <input type="text" id="surname" value="" placeholder="Soyadınızı Girin">
+        <input type="email" name="" id="mail" value="" placeholder="Email Adresinizi girin">
+        <input type="password" name="" id="pswd" value="" placeholder="Şifrenizi Girin">
+        <span>Doğum Tarihi:</span>
+        <div class="tarih">
+            
+            <select name="" id="gün" >
+                <option value="">gün</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+
+            </select>
+
+            <select name="" id="ay">
+                <option value="">ay</option>
+                <option value="Ocak">Ocak</option>
+                <option value="Şubat">Şubat</option>
+                <option value="Mart">Mart</option>
+                <option value="Nisan">Nisan</option>
+                <option value="Mayıs">Mayıs</option>
+                <option value="Haziran">Haziran</option>
+                <option value="Temmuz">Temmuz</option>
+                <option value="Ağustos">Ağustos</option>
+                <option value="Eylül">Eylül</option>
+                <option value="Ekim">Ekim</option>
+                <option value="Kasım">Kasım</option>
+                <option value="Aralık">Aralık</option>
+            </select>
+
+            <select name="" id="yıl">
+                <option value="">yıl</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+            </select>
+        </div>
+        <span>Cinsiyetiniz:</span>
+        <div class="cinsiyet">
+            <input type="radio" id="erkek" name="cinsiyet" value="Erkek">
+            <label for="erkek">Erkek</label>
+            <input type="radio" id="kadın" name="cinsiyet" value="Kadın">
+            <label for="kadın">Kadın</label>
+            <input type="radio" id="özel" name="cinsiyet" value="Özel">
+            <label for="özel">Özel</label>
+        </div>
+        <input type="submit" value="Kayıt Ol">
+        <span id="message"></span>
+
+        </form>
+
+        
+            
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

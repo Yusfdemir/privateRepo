@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --bg:white;
+}
+html {
+    font-size: 10px;
+}
+.container {
+    width: 100%;
+    
+}
+.navigate {
+    margin-top: 20px;
+    margin-left: 25px; 
+    position: sticky;
+    top: 0;
+    background-color: var(--bg);
+    
+}
+.logogoogle{
+    width: 15%;
+    float: left;
+}
+.logogoogle img {
+    height: 30%;
+    width: 60%;
+}
+
+.searchbar {
+    width: 60%;
+    float: left;
+}
+.sağfont{
+    width: 25%;
+    float:left;
+}
+.sağfont div {
+    float: right;
+    margin-right: 15px;
+
+}
+.searchinput {
+    width: 60%;
+    border: 0.5px solid rgb(121, 119, 119);
+    border-radius: 15px;
+    background-color: var(--bg);
+}
+.searchinput:hover {
+    -webkit-box-shadow: 0px 0px 8px -3px rgba(0,0,0,0.75); 
+    box-shadow: 0px 0px 8px -3px rgba(0,0,0,0.75);
+}
+.searchinput div {
+    float: right;
+    margin: 0px 5px;
+}
+.searchbarfont {
+    width: 25%;
+}
+.searchinput input {
+    border-style: none;
+    height: 30px;
+    width: 60%;
+    margin-left: 10px;
+}
+.nav2 {
+    clear: both;
+    margin-left: 15%;
+   
+    
+}
+
+.list ul li {
+    list-style-type: none;
+    float: left;
+    margin-right: 5px;
+    font-size:1.2rem;
+}
+
+section {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgb(196, 196, 196);
+    width: 100%;
+}
+
+.article{
+    
+    width: 50%;
+    margin-left: 17%
+}
+.art1 {
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+.art1 div {
+margin: 10px 0px;
+}
+.art1 div a {
+    color: blue;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.art1 a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1000px ) {
+    .nav2{
+        margin-left: 0px;
+    }
+    .article {
+        margin-left: 2%;
+    }
+}
+@media screen and (max-width: 860px) {
+    .searchinput input {
+        width: 40%;
+    }
+    .searchbarfont {
+        width: 45%;
+    }
+}
